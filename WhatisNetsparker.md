@@ -2,165 +2,26 @@
 
 Netsparker is an automated, yet fully configurable, [web application security scanner](https://www.netsparker.com/online-web-application-security-scanner/) that enables you to scan websites, web applications and web services, and identify security flaws. Netsparker can scan all types of web applications, regardless of the platform or the language with which they are built.
 
-Netsparker is the only online web application security scanner that
-automatically exploits identified vulnerabilities in a read-only and
-safe way, in order to confirm identified issues. It also presents proof
-of the vulnerability so that you do not need to waste time manually
-verifying it. For example, in the case of a detected SQL injection
-vulnerability, it will show the database name as the proof of exploit.
+Netsparker is the only online web application security scanner that automatically exploits identified vulnerabilities in a read-only and safe way, in order to confirm identified issues. It also presents proof of the vulnerability so that you do not need to waste time manually verifying it. For example, in the case of a detected SQL injection vulnerability, it will show the database name as the proof of exploit.
 
-Our scanning technology is designed to help you secure web applications
-easily without any fuss, so you can focus on fixing the reported
-vulnerabilities. If Netsparker cannot automatically confirm a
-vulnerability, it will inform you about it by prefixing it with
-\'*\[Possible\]\'*, and assigning a Certainty value, so you know what
-should be fixed immediately.
+Our scanning technology is designed to help you secure web applications easily without any fuss, so you can focus on fixing the reported vulnerabilities. If Netsparker cannot automatically confirm a vulnerability, it will inform you about it by prefixing it with \'*\[Possible\]\'*, and assigning a Certainty value, so you know what should be fixed immediately.
 
-### Key Concepts
+## Key Concepts
 
-This is a list of key concepts in Netsparker.
+> This is a list of key concepts in Netsparker.
 
-+--------------------------+------------------------------------------+
-| **Concept**              | **Description**                          |
-+==========================+==========================================+
-| Highly accurate          | Netsparker produces highly accurate web  |
-|                          | application security scans, whose        |
-|                          | vulnerabilities are verified, proving    |
-|                          | that they are not false positives.       |
-+--------------------------+------------------------------------------+
-| Proof-Based Scanning^TM^ | Our Proof-Based Scanning technology      |
-|                          | actively and automatically verifies      |
-|                          | detected vulnerabilities, confirming     |
-|                          | that they are real and not false         |
-|                          | positives, by exploiting them in a       |
-|                          | read-only and safe manner. Depending on  |
-|                          | the type of vulnerability, Netsparker    |
-|                          | will generate proof. Some                |
-|                          | vulnerabilities also allow you to        |
-|                          | exploit them manually or generate a      |
-|                          | Proof of Concept.                        |
-|                          |                                          |
-|                          | \[Embed video:                           |
-|                          | [[https://www.youtu                      |
-|                          | be.com/watch?v=uF9eGAfBh8A]{.ul}](https: |
-|                          | //www.youtube.com/watch?v=uF9eGAfBh8A)\] |
-|                          |                                          |
-|                          | It\'s completely safe. For example, when |
-|                          | [[exploiting a SQL injection             |
-|                          | vulnerability                            |
-|                          | ]{.ul}](https://www.netsparker.com/blog/ |
-|                          | web-security/sql-injection-cheat-sheet/) |
-|                          | and generating a proof of exploit for    |
-|                          | it, the scanners will only try to read   |
-|                          | data from the database, not write or     |
-|                          | delete data from the database.           |
-+--------------------------+------------------------------------------+
-| Proof of Concept         | Netsparker identifies vulnerabilities,   |
-|                          | then it safely exploits them *during*    |
-|                          | the web vulnerability scan. This Proof   |
-|                          | of Concept is the actual exploit that    |
-|                          | proves that the vulnerability exists.    |
-|                          | And, it\'s useful if you need to         |
-|                          | reproduce the vulnerability for a        |
-|                          | developer.                               |
-|                          |                                          |
-|                          | This is what an XSS vulnerability report |
-|                          | looks like, where the Proof URL is what  |
-|                          | Netsparker uses to exploit the           |
-|                          | vulnerability.                           |
-|                          |                                          |
-|                          | ![](media                                |
-|                          | /image1.png){width="4.927083333333333in" |
-|                          | height="2.9166666666666665in"}           |
-+--------------------------+------------------------------------------+
-| Proof of Exploit         | A proof of exploit is used to report the |
-|                          | data that can be extracted from the      |
-|                          | vulnerable target once the vulnerability |
-|                          | is exploited, demonstrating the impact   |
-|                          | an exploited vulnerability can have and  |
-|                          | proving that it is not a false positive. |
-|                          | This is what it looks like in the case   |
-|                          | of an SQL Injection vulnerability, as    |
-|                          | reported in Netsparker Enterprise .      |
-|                          |                                          |
-|                          | #####  {#section}                        |
-|                          |                                          |
-|                          | ![](media                                |
-|                          | /image2.png){width="4.927083333333333in" |
-|                          | height="3.263888888888889in"}            |
-|                          |                                          |
-|                          | Netsparker scanners can generate a proof |
-|                          | when they identify the following         |
-|                          | vulnerability types:                     |
-|                          |                                          |
-|                          | -   SQL Injection                        |
-|                          |                                          |
-|                          | -   Boolean SQL Injection                |
-|                          |                                          |
-|                          | -   Blind SQL Injection                  |
-|                          |                                          |
-|                          | -   Remote File Inclusion (RFI)          |
-|                          |                                          |
-|                          | -   Command Injection                    |
-|                          |                                          |
-|                          | -   Blind Command Injection              |
-|                          |                                          |
-|                          | -   XML External Entity (XXE) Injection  |
-|                          |                                          |
-|                          | -   Remote Code Evaluation               |
-|                          |                                          |
-|                          | -   Local File Inclusion (LFI)           |
-|                          |                                          |
-|                          | -   Server-side Template Injection       |
-|                          |                                          |
-|                          | -   Remote Code Execution                |
-|                          |                                          |
-|                          | -   Injection via Local File Inclusion   |
-|                          |                                          |
-|                          | If Netsparker is unable to automatically |
-|                          | prove the vulnerability exists, you will |
-|                          | be advised so that you can double-check  |
-|                          | its findings.                            |
-+--------------------------+------------------------------------------+
-| Vulnerabilities          | A vulnerability is a security weakness   |
-|                          | in your website or web application that  |
-|                          | provides an opening for malicious        |
-|                          | hackers to gain access, get access to    |
-|                          | data or exploit for illegitimate or      |
-|                          | illegal purposes.                        |
-+--------------------------+------------------------------------------+
-| Issues                   | An Issue is the name, type, date and     |
-|                          | other details of any detected            |
-|                          | vulnerability.                           |
-+--------------------------+------------------------------------------+
-| Severities               | Each vulnerability is assigned a         |
-|                          | different severity or threat level       |
-|                          | according to the damage it could do and  |
-|                          | the urgency with which it requires       |
-|                          | fixing (see [[Vulnerability Severity     |
-|                          | Levels]{.ul}]                            |
-|                          | (https://www.netsparker.com/support/vuln |
-|                          | erability-severity-levels-netsparker/)). |
-+--------------------------+------------------------------------------+
-| Scan Policies            | Netsparker allows you to use Scan        |
-|                          | Policies in order to determine and       |
-|                          | specify the type, range, and targets of  |
-|                          | your scan according to your needs.       |
-+--------------------------+------------------------------------------+
-| Scheduled Scans          | Scans can be launched immediately or     |
-|                          | they can be scheduled for times when it  |
-|                          | best suits you, including at regular     |
-|                          | intervals.                               |
-+--------------------------+------------------------------------------+
-| Integrations             | Netsparker integrates with a wide range  |
-|                          | of software and tools that enable you to |
-|                          | connect with your existing SDLC,         |
-|                          | including vulnerability management       |
-|                          | systems, issue tracking systems,         |
-|                          | continuous integration systems, single   |
-|                          | sign-on providers, team messaging        |
-|                          | systems, and web application firewalls.  |
-+--------------------------+------------------------------------------+
+|**Concept**     |  **Description**  |
+|---|---|
+|  Highly accurate  | Netsparker produces highly accurate web application security scans, whose vulnerabilities are verified, proving that they are not false positives.  |
+| Proof-Based Scanning™  | Our Proof-Based Scanning technology actively and automatically verifies detected vulnerabilities, confirming that they are real and not false positives, by exploiting them in a read-only and safe manner. Depending on the type of vulnerability, Netsparker will generate proof. Some vulnerabilities also allow you to exploit them manually or generate a Proof of Concept.</br> It's completely safe. For example, when exploiting a SQL injection vulnerability and generating a proof of exploit for it, the scanners will only try to read data from the database, not write or delete data from the database.|
+|Proof of Concept   | Netsparker identifies vulnerabilities, then it safely exploits them during the web vulnerability scan. This Proof of Concept is the actual exploit that proves that the vulnerability exists. And, it's useful if you need to reproduce the vulnerability for a developer. This is what an XSS vulnerability report looks like, where the Proof URL is what Netsparker uses to exploit the vulnerability.  |
+| Proof of Exploit  | A proof of exploit is used to report the data that can be extracted from the vulnerable target once the vulnerability is exploited, demonstrating the impact an exploited vulnerability can have and proving that it is not a false positive. This is what it looks like in the case of an SQL Injection vulnerability.  |
+| Vulnerabilities  | A vulnerability is a security weakness in your website or web application that provides an opening for malicious hackers to gain access, get access to data or exploit for illegitimate or illegal purposes.  |
+| Issues  |  An Issue is the name, type, date and other details of any detected vulnerability. |
+| Severities |  Each vulnerability is assigned a different severity or threat level according to the damage it could do and the urgency with which it requires fixing.|
+| Scan Policies  | Netsparker allows you to use Scan Policies in order to determine and specify the type, range, and targets of your scan according to your needs.  |
+| Scheduled Scans  | Scans can be launched immediately or they can be scheduled for times when it best suits you, including at regular intervals.  |
+| Integrations  | Netsparker can work with and import or export information in conjunction with other security scanning tools.  |
 
 ## Benefits of Proof-Based Scanning^TM^ Technology
 
@@ -187,27 +48,15 @@ Here are some of the key benefits:
 
 ### [What is the Difference Between Netsparker Enterprise and Netsparker Standard?](https://www.netsparker.com/support/what-is-netsparker/#what-is-the-difference-betweeen-netsparker-enterprise-and-netsparker-standard)
 
-[[Netsparker
-Enterprise]{.ul}](https://www.netsparker.com/online-web-application-security-scanner/)
-is an online web application security scanner that is available
-On-Demand and On-Premises, and [[Netsparker
-Standard]{.ul}](https://www.netsparker.com/web-vulnerability-scanner/)
-is a Windows desktop application.
+[Netsparker Enterprise](https://www.netsparker.com/online-web-application-security-scanner/) is an online web application security scanner that is available On-Demand and On-Premises, and [Netsparker Standard](https://www.netsparker.com/web-vulnerability-scanner/) is a Windows desktop application.
 
-For further information, see [[Netsparker Standard]{.ul} [and Netsparker
-Enterprise
-Comparison]{.ul}](https://www.netsparker.com/comparison-netsparker-cloud-desktop/).
+For further information, see [Netsparker Standard and Netsparker Enterprise Comparison](https://www.netsparker.com/comparison-netsparker-cloud-desktop/).
 
 #### Netsparker Crawling and Scanning Technology
 
-Netsparker has [[industry leading scanning
-technology]{.ul}](https://www.netsparker.com/blog/news/comparison-web-vulnerability-scanners-netsparker/).
-Both editions are built around the same crawling and [[Proof-Based
-Scanning
-technology]{.ul}](https://www.netsparker.com/web-vulnerability-scanner/false-positive-free-web-security-scan/).
-In terms of coverage, [[detection of vulnerabilities and security
-flaws]{.ul}](https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/),
-you get the same results.
+Netsparker has [[industry leading scanning technology]{.ul}](https://www.netsparker.com/blog/news/comparison-web-vulnerability-scanners-netsparker/). Both editions are built around the same crawling and [[Proof-Based Scanning technology]{.ul}](https://www.netsparker.com/web-vulnerability-scanner/false-positive-free-web-security-scan/).
+
+In terms of coverage, [detection of vulnerabilities and security flaws](https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/), you get the same results.
 
 #### Overview of Both Netsparker Web Application Security Scanners
 
