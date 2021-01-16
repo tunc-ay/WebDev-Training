@@ -1,12 +1,6 @@
 # What is Netsparker?
 
-Netsparker is an automated, yet fully configurable, [[web]{.ul}
-[application security
-scanner]{.ul}](https://www.netsparker.com/online-web-application-security-scanner/)
-that enables you to scan websites, web applications and web services,
-and identify security flaws. Netsparker can scan all types of web
-applications, regardless of the platform or the language with which they
-are built.
+Netsparker is an automated, yet fully configurable, [web application security scanner](https://www.netsparker.com/online-web-application-security-scanner/) that enables you to scan websites, web applications and web services, and identify security flaws. Netsparker can scan all types of web applications, regardless of the platform or the language with which they are built.
 
 Netsparker is the only online web application security scanner that
 automatically exploits identified vulnerabilities in a read-only and
